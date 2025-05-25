@@ -17,6 +17,11 @@ class App extends React.Component {
     this.inputClick = this.inputClick.bind(this);
   }
 
+  componentDidUpdate(prevProp) {
+    if(this.state.helpText !== "Help")
+      console.log("Some");
+  }
+
   helpText = "Help text!";
   render() {
     return (
